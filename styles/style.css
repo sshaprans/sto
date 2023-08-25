@@ -665,7 +665,22 @@ footer>.container{
     position: relative;
 }
 .close {
-    visibility: hidden;
+    position: absolute;
+    right: 16px;
+    top: -6px;
+    font-weight: 600;
+    font-size: 64px;
+    color: #000000;
+    float: right;
+    transition: all .3s;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    transform: rotate(-180deg);
+    text-decoration: none;
+    cursor: pointer;
 }
 .scroll-hidden { overflow: hidden }
 .modal-img {

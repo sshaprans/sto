@@ -2,6 +2,7 @@
 // modal
 const modal = document.querySelector("#modal");
 const modalBtn = document.querySelectorAll(".modal_btn_js");
+const closeBtn = document.getElementsByClassName("close")[0];
 const overlay = document.querySelector(".overlay");
 modalBtn.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -11,6 +12,11 @@ modalBtn.forEach(btn => {
         document.querySelector('body').style.overflow = 'hidden';
     })
 })
+closeBtn.onclick = function() {
+    overlay.classList.remove("open");
+    modal.classList.remove("open");
+    document.querySelector('body').removeAttribute('style');
+}
 window.onclick = function(event) {
     if (event.target === modal) {
         modal.classList.remove("open");
