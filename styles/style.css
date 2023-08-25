@@ -670,7 +670,7 @@ footer>.container{
     top: -6px;
     font-weight: 600;
     font-size: 64px;
-    color: #000000;
+    color: #ffffff;
     float: right;
     transition: all .3s;
 }
@@ -1371,6 +1371,12 @@ footer>.container{
     .contacts_block {
         padding: 10px;
     }
+    .close {
+        right: 2px;
+        top: -13px;
+        font-size: 55px;
+        color: #ffffff;
+    }
 }
 @media (max-width: 406px){
     .logo-link{
@@ -1460,5 +1466,6 @@ footer>.container{
         width: 261px;
         height: 347px;
     }
+    
 }
 
